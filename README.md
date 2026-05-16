@@ -53,7 +53,7 @@ Where:
 ### 📈 Visualizing the Line of Best Fit
 The model successfully minimized the residual sum of squares to draw the optimal regression line through the noisy data points:
 
-![Regression Plot](./Day_01_Simple_Linear_Regression/regression_plot.png)
+![Regression Plot](./Day_01_Simple_Linear_Regression/regression.png)
 
 ### 🏆 Key Metrics Achieved
 * **Calculated Slope ($\beta_1$):** ~3.00  *(True Value: 3.0)*
