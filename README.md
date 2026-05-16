@@ -29,7 +29,7 @@ This log is updated daily with links to code, datasets, and a snapshot of what I
 
 | Day | Topic | Source Code | Key Concepts / Libraries |
 | :---: | :--- | :---: | :--- |
-| **01** | **Simple Linear Regression** | [💻 Code](./Day_01_Simple_Linear_Regression/) | , $R^2$ Score, Mean Squared Error (MSE). |
+| **01** | **Simple Linear Regression** | [💻 Code](./Day_01_Simple_Linear_Regression/Simple_linear_regression.ipynb) | , $R^2$ Score, Mean Squared Error (MSE). |
 | **02** | *Coming Soon...* | ⏳ | *Pending update* |
 | **03** | *Coming Soon...* | ⏳ | *Pending update* |
 
@@ -53,7 +53,7 @@ Where:
 ### 📈 Visualizing the Line of Best Fit
 The model successfully minimized the residual sum of squares to draw the optimal regression line through the noisy data points:
 
-![Regression Plot](./Day_01_Simple_Linear_Regression/regression.png)
+![Regression Plot](./Day_01_Simple_Linear_Regression/Regression.png)
 
 ### 🏆 Key Metrics Achieved
 * **Calculated Slope ($\beta_1$):** ~3.00  *(True Value: 3.0)*
