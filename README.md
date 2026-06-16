@@ -61,6 +61,62 @@ The model successfully minimized the residual sum of squares to draw the optimal
 * **Evaluation:** Evaluated cleanly using a 80/20 train-test split to ensure zero data leakage.
 
 ---
+# Day 2: Gradient Descent 📉
+
+Welcome to Day 2 of my **100 Days of Machine Learning** journey! Today, I dived deep into **Gradient Descent**, the fundamental optimization algorithm used to train machine learning models by minimizing a loss function.
+
+---
+
+## 📝 Concept Overview
+
+Gradient Descent is an iterative optimization algorithm used to find the local minimum of a function. In machine learning, we use it to update the parameters of our model (weights $w$ and biases $b$) to minimize the **Cost Function** (error).
+
+Imagine being stuck at the top of a mountain in a thick fog. To find the bottom of the valley, you feel the slope of the ground under your feet and take a step in the direction where the slope goes down most steeply. You repeat this until you reach flat ground. That is gradient descent!
+
+---
+
+## 📐 The Mathematics
+
+To update the weights, we calculate the partial derivative of the cost function with respect to each parameter. 
+
+### 1. The Cost Function (MSE)
+For linear regression, we often use Mean Squared Error:
+$$J(w, b) = \frac{1}{2m} \sum_{i=1}^{m} (f_{w,b}(x^{(i)}) - y^{(i)})^2$$
+
+### 2. Gradient Steps
+We update the parameters simultaneously in the opposite direction of the gradient:
+$$w = w - \alpha \frac{\partial}{\partial w} J(w,b)$$
+$$b = b - \alpha \frac{\partial}{\partial b} J(w,b)$$
+
+Where:
+* **$\alpha$ (Alpha):** The **Learning Rate**. It controls how big of a step we take down the hill.
+    * *Too small:* Training is incredibly slow.
+    * *Too large:* The algorithm can overshoot the minimum and fail to converge.
+
+---
+
+## 🛠️ Implementation Details
+
+Today, I implemented Gradient Descent from scratch using Python and NumPy.
+
+### Key Components in the Code:
+* `compute_cost()`: Calculates the total error of the current model.
+* `compute_gradient()`: Calculates the partial derivatives (the slope).
+* `gradient_descent()`: Runs the loop to iteratively update the weights until convergence.
+
+### Visualizing Convergence
+*(Optional: If you plot your cost history vs. iterations, save the image as `cost_history.png` and uncomment the line below!)*
+---
+
+## 📂 Repository Structure
+
+```text
+├── day_002_gradient_descent.ipynb  # Jupyter Notebook with code & visualizations
+├── gradient_descent.py             # Pure Python implementation
+├── data.csv                        # Synthetic/Sample dataset used for testing
+└── README.md                       # This file! 
+```
+
 
 ## 🛠️ Local Setup & Installation
 
