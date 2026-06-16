@@ -104,19 +104,6 @@ Today, I implemented Gradient Descent from scratch using Python and NumPy.
 * `compute_gradient()`: Calculates the partial derivatives (the slope).
 * `gradient_descent()`: Runs the loop to iteratively update the weights until convergence.
 
-### Visualizing Convergence
-*(Optional: If you plot your cost history vs. iterations, save the image as `cost_history.png` and uncomment the line below!)*
----
-
-## 📂 Repository Structure
-
-```text
-├── day_002_gradient_descent.ipynb  # Jupyter Notebook with code & visualizations
-├── gradient_descent.py             # Pure Python implementation
-├── data.csv                        # Synthetic/Sample dataset used for testing
-└── README.md                       # This file! 
-```
-
 
 ## 🛠️ Local Setup & Installation
 
